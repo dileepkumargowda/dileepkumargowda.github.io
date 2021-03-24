@@ -1,213 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+.sidenav {
+  height: 100%;
+  width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(240, 224, 206);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
 
-  <title>Dileep Blog</title>
+.sidenav {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+.sidenav a:hover {
+  color: #f1f1f1;
+  
+}
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
-    type='text/css'>
-  <link
-    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-    rel='stylesheet' type='text/css'>
+.main {
+  margin-left: 280px; /* Same as the width of the sidenav */
+  font-size: 18px; /* Increased text to enable scrolling */
+  border: #111;
+  padding: 0px 10px;
+  max-width: 48%;
+}
 
-  <!-- Custom styles for this template -->
-  <link href="css/clean-blog.min.css" rel="stylesheet">
+.main-in{
+   /* word-break: break-all;*/
+    word-wrap: break-word;
+    margin-bottom: 89px;
+}
 
+hr.line {
+  border: 1px solid red;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
 </head>
-
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Dileep Blog</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="post.html">Sample Post</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Dileep Blog</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="nav navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Page Header -->
-  <!-- <header class="masthead" style="background-image: url('img/home-bg.jpg')">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-         <div class="site-heading">
-            <h1>Clean Blog</h1>
-            <span class="subheading">A Blog Theme by Start Bootstrap</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>  -->
-
-  <!-- Main Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Man must explore, and this is exploration at its greatest
-            </h2>
-            <h3 class="post-subtitle">
-              Problems look mighty small from 150 miles up
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 24, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-            </h2>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 18, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Science has not yet mastered prophecy
-            </h2>
-            <h3 class="post-subtitle">
-              We predict too much for the next year and yet far too little for the next ten.
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on August 24, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Failure is not an option
-            </h2>
-            <h3 class="post-subtitle">
-              Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on July 8, 2019</p>
-        </div>
-        <hr>
-        <!-- Pager -->
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-        </div>
-      </div>
-    </div>
+<div class="sidenav">
+ <!-- <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>-->
+  <p>Dileep, </p>
+     <p> It’s a space to share my 
+         thoughts and ideas </p>
   </div>
 
-  <hr>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <ul class="list-inline text-center">
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-          <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
-        </div>
-      </div>
+<div class="main">
+    <div class="main-in">
+        <h2>Fixed wakeup time</h2>
+        <p>Fixing a time for a sleeping will be always better than sleeping at the time when body calls for.
+        if you are not able to go to bed at same time everyday, atlest fix the time you wake up everyday
+        no matter how much less sleep you get that day, and you can always catch up your sleep later in the day</p>
+        
+        <p>if you are not sleep deprived for continueous two to four days you can still manage less of sleep in one night
+        and still do your worldly affairs quite well as usual.</p>
+        
+        <p>However if you distract your self everyday your fixed time of waking up it distrubs your way of starting a day
+        it intern impact your day productivity towords your fixed current goal in sight.</p>
+        
+        <p>Follow the same timing no matter what and where you are. if you are in the place where you have nothing to do 
+        waking up early then just go for a walk, or sit on your bed start revisiting your last day activities mentally or practice 
+        gratittude listings whatever. Idea here is you wake up everyday fixed time no matter what, even you got just two hours 
+        sleep in that perticular day.</p>
+        <hr class="line">
     </div>
-  </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <div class="main-in">
+        <h2>Men, Dont go for facial massage before big event day</h2>
+            <p>I had a engagement on 14th march, in hurry I went to known barber in bangalore asked him to do 
+            something on my face so that I should look somewhat good, that was on 12th march means 2 days before
+            the actual event day, he messaged me about one hour with electic rubber on my face with cream.
+            its around 4 to 5 type of creams one after other.</p>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/clean-blog.min.js"></script>
+            <p>after that process i was looking lighter sinned, it felt good and loos feeling on my face.
+            event went well no problem, but after 3 days of event I started to notice small pinples all over my
+            forhead and cheeks, after around 10th day of massage they started to reduce in numbers.</p>
 
+            <p>My suggetion is if you are not taken the massage of those perticular creems dont try then when your event
+            is near by like within two or three days. Because you dont know what effect it will have on your skin in 
+            two days.</p>
+
+            <p>if you are already tested with that no problem.it applays only to those dont bother to take face massage often
+            and want to take it when event day is ahead.
+            </p>
+               
+            <hr class="line">
+    </div>
+
+    <div class="main-in">
+        <h2>Dont use Bro, Dude,Man, words alot in your communication</h2>
+
+        <p>While using the words like, bro, dude, man, sis, these kind of words in our day to day communication may make us connected
+        yet its hard to take those people seriously in professional settings.</p>
+
+        <p>for me people who use those words looks collage hippies, its good if you use with selected one or tow
+            people in your closed cicles but using those words in office environmant is decradful to your profession.
+        </p>
+        <p>
+        for example I use the word Macchi, only with one of my close friend, it feels good and deeply connected with 
+        depth of bonding but if i start using same word I can not say people will take me for serious in whatever I has to say
+        </p>
+      <hr class="line">
+    </div>
+
+    <div class="main-in">
+        <h2>Get use to being empty of concepts</h2>
+        <p>There is a saying in zen "know nothing, have noting" just be.</p>
+        <p>if we observe mind is thinking about one other concepts, there is constant narrationg of stories,
+             theories and concepts. if we try harder to stop them that becomes the story of how to stop thinking.</p>
+        <p>Let everythihng come and go. watch the tendency to plan somthing, seek somthing or straive for somsthing all the time
+            you are planning to do something, planning to undo something, you are waiting for what is to come,
+            ther are always a concerns of one or other all the time bothering one way or other.</p>
+        <p>watch the tendency to criticize someone or somthing, correct.
+            Look, how much we think about other people, commit yourself not to think, talk and discuss about other people
+            when its not needed.
+        </p>
+        <hr class="line">
+    </div>
+
+
+    <div class="main-in">
+        <h2>Sidebar</h2>
+        <p>This sidebar is of full height (100%) and always shown.</p>
+        <p>Scroll down the page to see the result.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no
+             quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <hr class="line">
+    </div>
+  </div>
+   
 </body>
-
-</html>
+</html> 
